@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hodael.davidimarket.EmployeeManage"
+    tools:layout_editor_absoluteY="81dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <EditText
+            android:id="@+id/addEmpIdTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/addEmpUNameTxt"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/addEmpUNameTxt"
+            android:ems="10"
+            android:hint="Add Employee id"
+            android:inputType="textPersonName"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:layout_editor_absoluteY="187dp" />
+
+        <EditText
+            android:id="@+id/addEmpUNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/AddEmpButton"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_toLeftOf="@+id/AddEmpButton"
+            android:layout_toStartOf="@+id/AddEmpButton"
+            android:ems="10"
+            android:hint="Employee user name"
+            android:inputType="textPersonName"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:layout_editor_absoluteY="67dp" />
+
+        <EditText
+            android:id="@+id/SearchEmpByName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/SearchEmpButton"
+            android:layout_alignBottom="@+id/SearchEmpButton"
+            android:layout_toLeftOf="@+id/SearchEmpButton"
+            android:layout_toStartOf="@+id/SearchEmpButton"
+            android:ems="10"
+            android:hint="Search by user name"
+            android:inputType="textPersonName"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:layout_editor_absoluteY="377dp" />
+
+        <Button
+            android:id="@+id/AddEmpButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/addEmpIdTxt"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="34dp"
+            android:text="Add Employee"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="100dp" />
+
+        <Button
+            android:id="@+id/SearchEmpButton"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignLeft="@+id/AddEmpButton"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/AddEmpButton"
+            android:layout_marginBottom="157dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:text="Search "
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="275dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/SearchEmpByName"
+            android:layout_alignRight="@+id/SearchEmpByName"
+            android:layout_centerVertical="true"
+            android:text="Search Employee"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.481"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.449" />
+
+        <EditText
+            android:id="@+id/showEmpMulti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SearchEmpByName"
+            android:layout_marginTop="47dp"
+            android:layout_toLeftOf="@+id/SearchEmpButton"
+            android:layout_toStartOf="@+id/SearchEmpButton"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/empPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/addEmpBdate"
+            android:layout_alignStart="@+id/addEmpBdate"
+            android:layout_below="@+id/addEmpUNameTxt"
+            android:layout_marginTop="22dp"
+            android:ems="10"
+            android:hint="Employee Position"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/addEmpBdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/addEmpUNameTxt"
+            android:layout_alignStart="@+id/addEmpUNameTxt"
+            android:layout_below="@+id/addEmpIdTxt"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:hint="Employee birth date"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/setPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addEmpBdate"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="21dp"
+            android:layout_toEndOf="@+id/textView7"
+            android:layout_toRightOf="@+id/textView7"
+            android:ems="10"
+            android:hint="Set password"
+            android:inputType="textPassword"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/setPassword"
+            android:layout_alignBottom="@+id/setPassword"
+            android:layout_alignLeft="@+id/empPosition"
+            android:layout_alignStart="@+id/empPosition"
+            android:text="Set Password" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hodael.davidimarket.Stock">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="Stock" />
+
+        <Button
+            android:id="@+id/showItem_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/add_item"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:text="show item" />
+
+        <EditText
+            android:id="@+id/show_ItemText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView5"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:ems="10"
+            android:hint="Show Item"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/add_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/show_ItemText"
+            android:layout_alignStart="@+id/show_ItemText"
+            android:layout_below="@+id/show_ItemText"
+            android:layout_marginTop="94dp"
+            android:ems="10"
+            android:hint="Add Item"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/addItem_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/showItem_Button"
+            android:layout_alignRight="@+id/showItem_Button"
+            android:layout_centerVertical="true"
+            android:text="Add_item" />
+
+        <EditText
+            android:id="@+id/addQuantuty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/add_item"
+            android:layout_alignStart="@+id/add_item"
+            android:layout_below="@+id/add_item"
+            android:ems="10"
+            android:hint="Quantity"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/addItemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/addQuantuty"
+            android:layout_alignRight="@+id/addQuantuty"
+            android:layout_below="@+id/addItem_Button"
+            android:ems="10"
+            android:hint="Item Price"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/ItemDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/show_ItemText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

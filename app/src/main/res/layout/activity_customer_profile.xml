@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hodael.davidimarket.customerProfile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:text="Welcome customer"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_marginEnd="34dp"
+            android:layout_marginRight="34dp"
+            android:layout_marginTop="25dp"
+            android:layout_toLeftOf="@+id/textView2"
+            android:layout_toStartOf="@+id/textView2"
+            android:text="User Name :" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView19"
+            android:layout_alignRight="@+id/textView19"
+            android:layout_below="@+id/textView19"
+            android:text="First Name :" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView20"
+            android:layout_alignRight="@+id/textView20"
+            android:layout_below="@+id/textView20"
+            android:text="Last Name :" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView21"
+            android:layout_alignStart="@+id/textView21"
+            android:layout_below="@+id/textView21"
+            android:text="City :" />
+
+        <TextView
+            android:id="@+id/uNameP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView19"
+            android:layout_alignBottom="@+id/textView19"
+            android:layout_marginLeft="35dp"
+            android:layout_marginStart="35dp"
+            android:layout_toEndOf="@+id/textView19"
+            android:layout_toRightOf="@+id/textView19" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView19"
+            android:layout_alignStart="@+id/textView19"
+            android:layout_below="@+id/textView22"
+            android:text="Email :" />
+
+        <TextView
+            android:id="@+id/fNameP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView20"
+            android:layout_alignLeft="@+id/uNameP"
+            android:layout_alignStart="@+id/uNameP" />
+
+        <TextView
+            android:id="@+id/lNameP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/fNameP"
+            android:layout_alignStart="@+id/fNameP"
+            android:layout_below="@+id/fNameP" />
+
+        <TextView
+            android:id="@+id/cityP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lNameP"
+            android:layout_alignStart="@+id/lNameP"
+            android:layout_below="@+id/lNameP" />
+
+        <TextView
+            android:id="@+id/emailP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cityP"
+            android:layout_alignStart="@+id/cityP"
+            android:layout_below="@+id/cityP" />
+
+        <Button
+            android:id="@+id/custSearchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/emailP"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="54dp"
+            android:text="Search Item" />
+
+        <EditText
+            android:id="@+id/custItemNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/custSearchBtn"
+            android:layout_alignLeft="@+id/textView27"
+            android:layout_alignStart="@+id/textView27"
+            android:ems="10"
+            android:hint="Enter the Item Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/showItemCustom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/custItemNameTxt"
+            android:layout_alignStart="@+id/custItemNameTxt"
+            android:layout_below="@+id/custItemNameTxt"
+            android:layout_marginTop="22dp"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

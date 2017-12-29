@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hodael.davidimarket.firstScreen">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <Button
+            android:id="@+id/Readme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:onClick="onClickReadme"
+            android:text="README" />
+
+        <Button
+            android:id="@+id/map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="onClickMap"
+            android:text="map" />
+
+        <EditText
+            android:id="@+id/Password_IN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userIn"
+            android:layout_toEndOf="@+id/Readme"
+            android:layout_toRightOf="@+id/Readme"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/logIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:onClick="onClickLogIn"
+            android:text="Customer Login" />
+
+        <Button
+            android:id="@+id/sign-id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button3"
+            android:layout_centerHorizontal="true"
+            android:onClick="onClIcKsIgN"
+            android:text="SIGN-IN" />
+
+        <EditText
+            android:id="@+id/userIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Password_IN"
+            android:layout_alignStart="@+id/Password_IN"
+            android:layout_below="@+id/Readme"
+            android:layout_marginTop="48dp"
+            android:ems="10"
+            android:hint="username"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logIn"
+            android:layout_centerHorizontal="true"
+            android:onClick="onClickLogInEmp"
+            android:text="employee login" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
