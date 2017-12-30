@@ -13,81 +13,42 @@
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="5dp">
 
-    <TextView
-        android:id="@+id/textName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="22dp"
-        android:text="User Name:" />
-
-    <EditText
-        android:id="@+id/editUser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginEnd="22dp"
-        android:layout_marginRight="22dp"
-        android:ems="10"
-        android:inputType="textPersonName" />
-
-        <TextView
-            android:id="@+id/textPassword"
+        <EditText
+            android:id="@+id/editUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textName"
-            android:layout_alignStart="@+id/textName"
-            android:layout_below="@+id/editUser"
-            android:layout_marginTop="29dp"
-            android:text="Password:" />
+            android:layout_alignEnd="@+id/editPassword"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/editPassword"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:hint="User Name"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/editPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/editName"
-            android:layout_alignLeft="@+id/editUser"
-            android:layout_alignStart="@+id/editUser"
-            android:ems="10"
-            android:inputType="textPassword" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textPassword"
-            android:layout_alignStart="@+id/textPassword"
-            android:layout_below="@+id/textPassword"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editName"
             android:layout_marginTop="22dp"
-            android:text="Name:" />
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword" />
 
         <EditText
             android:id="@+id/editName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/textView3"
-            android:layout_alignBottom="@+id/textView3"
-            android:layout_alignLeft="@+id/editPassword"
-            android:layout_alignStart="@+id/editPassword"
+            android:layout_alignLeft="@+id/editUser"
+            android:layout_alignStart="@+id/editUser"
+            android:layout_alignTop="@+id/editUser"
+            android:layout_marginTop="35dp"
             android:ems="10"
+            android:hint="First Name"
             android:inputType="textPersonName" />
 
-
-        <TextView
-            android:id="@+id/textLN"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/editLN"
-            android:layout_alignBottom="@+id/editLN"
-            android:layout_alignEnd="@+id/textPassword"
-            android:layout_alignRight="@+id/textPassword"
-            android:text="Last Name:" />
 
         <EditText
             android:id="@+id/editLN"
@@ -95,66 +56,32 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/editName"
             android:layout_alignStart="@+id/editName"
-            android:layout_below="@+id/editName"
+            android:layout_below="@+id/editUser"
+            android:layout_marginTop="23dp"
             android:ems="10"
+            android:hint="Last Name"
             android:inputType="textPersonName" />
-
-        <TextView
-            android:id="@+id/textStreet"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/editStreet"
-            android:layout_alignEnd="@+id/textView3"
-            android:layout_alignRight="@+id/textView3"
-            android:text="Street:" />
-
-        <EditText
-            android:id="@+id/editStreet"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/editLN"
-            android:layout_alignStart="@+id/editLN"
-            android:layout_below="@+id/editLN"
-            android:ems="10"
-            android:inputType="textPostalAddress" />
-
-        <TextView
-            android:id="@+id/textCity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textStreet"
-            android:layout_alignStart="@+id/textStreet"
-            android:layout_below="@+id/editStreet"
-            android:layout_marginTop="24dp"
-            android:text="City:" />
 
         <EditText
             android:id="@+id/editCity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/textCity"
-            android:layout_alignLeft="@+id/editStreet"
-            android:layout_alignStart="@+id/editStreet"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editLN"
+            android:layout_marginTop="21dp"
             android:ems="10"
+            android:hint="City"
             android:inputType="textPostalAddress" />
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/editEmail"
-            android:layout_alignBottom="@+id/editEmail"
-            android:layout_alignLeft="@+id/textView3"
-            android:layout_alignStart="@+id/textView3"
-            android:text="Email:" />
 
         <Button
             android:id="@+id/Capture"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/Upload"
-            android:layout_alignBottom="@+id/Upload"
-            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/editEmail"
+            android:layout_marginTop="28dp"
+            android:layout_toLeftOf="@+id/img"
+            android:layout_toStartOf="@+id/img"
             android:onClick="onClickCapture"
             android:text="capture" />
 
@@ -162,32 +89,23 @@
             android:id="@+id/Upload"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textLN"
-            android:layout_alignStart="@+id/textLN"
-            android:layout_below="@+id/editEmail"
-            android:layout_marginTop="13dp"
+            android:layout_alignBaseline="@+id/Capture"
+            android:layout_alignBottom="@+id/Capture"
+            android:layout_alignEnd="@+id/editEmail"
+            android:layout_alignRight="@+id/editEmail"
             android:onClick="onClickUp"
             android:text="upload" />
-
-        <ImageView
-            android:id="@+id/img"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/Capture"
-            android:layout_alignLeft="@+id/textView"
-            android:layout_alignParentBottom="true"
-            android:layout_alignRight="@+id/Capture"
-            android:layout_alignStart="@+id/textView"
-            android:layout_below="@+id/Capture"
-            app:srcCompat="@drawable/common_full_open_on_phone" />
 
         <Button
             android:id="@+id/finishReg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/editEmail"
-            android:layout_alignRight="@+id/editEmail"
-            android:layout_alignTop="@+id/Capture"
+            android:layout_alignBaseline="@+id/Upload"
+            android:layout_alignBottom="@+id/Upload"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="29dp"
+            android:layout_marginRight="29dp"
             android:text="Finish" />
 
         <EditText
@@ -196,9 +114,27 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/editCity"
             android:layout_alignStart="@+id/editCity"
-            android:layout_below="@+id/editCity"
+            android:layout_below="@+id/editPassword"
+            android:layout_marginTop="20dp"
             android:ems="10"
+            android:hint="Email"
             android:inputType="textEmailAddress" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/Capture"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/common_google_signin_btn_icon_dark_normal_background" />
+        </LinearLayout>
 
 
     </RelativeLayout>

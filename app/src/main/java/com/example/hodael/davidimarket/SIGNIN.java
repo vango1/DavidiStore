@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.firebase.client.Firebase;
 
@@ -27,13 +28,13 @@ public class SIGNIN extends AppCompatActivity {
     private EditText password;
     private  Firebase mRootRef;
 
-    ImageView img;
+    ImageView imgView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signin);
-        img = findViewById(R.id.img);
+        imgView = findViewById(R.id.img);
         Firebase.setAndroidContext(this);
         mRootRef = new Firebase("https://my-project-1512230573726.firebaseio.com/Users");
         finishReg = (Button) findViewById(R.id.finishReg);
@@ -88,12 +89,15 @@ public class SIGNIN extends AppCompatActivity {
         if( resultCode == RESULT_OK && data != null){
             if(requestCode == GRESULT) {
                 Uri selectedImg = data.getData();
-                img.setImageURI(selectedImg);
+                imgView.setImageURI(selectedImg);
+                Toast.makeText(this, "images uploaded from Gallery ", Toast.LENGTH_LONG).show();
+
 
             }
             else {
                 Bitmap bit = (Bitmap) data.getExtras().get("data");
-                img.setImageBitmap(bit);
+                imgView.setImageBitmap(bit);
+                Toast.makeText(this, "images uploaded from Camera ", Toast.LENGTH_LONG).show();
 
 
 
