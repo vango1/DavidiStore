@@ -106,6 +106,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginEnd="29dp"
             android:layout_marginRight="29dp"
+            android:onClick="onClickFinish"
             android:text="Finish" />
 
         <EditText

@@ -19,7 +19,7 @@ public class SIGNIN extends AppCompatActivity {
     private  static int i = 1;
     private static final int CRESULT = 1;
     private static final int GRESULT = 2;
-    private Button finishReg ;
+
     private EditText userName;
     private EditText firstname;
     private EditText lastName;
@@ -36,8 +36,7 @@ public class SIGNIN extends AppCompatActivity {
         setContentView(R.layout.activity_signin);
         imgView = findViewById(R.id.img);
         Firebase.setAndroidContext(this);
-        mRootRef = new Firebase("https://my-project-1512230573726.firebaseio.com/Users");
-        finishReg = (Button) findViewById(R.id.finishReg);
+        mRootRef = new Firebase("https://civic-boulevard-187917.firebaseio.com/Users");
         userName = (EditText)findViewById(R.id.editUser);
         firstname = (EditText)findViewById(R.id.editName);
         lastName = (EditText)findViewById(R.id.editLN);
@@ -46,24 +45,24 @@ public class SIGNIN extends AppCompatActivity {
         password = (EditText)findViewById(R.id.editPassword);
 
 
-        finishReg.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String uName = userName.getText().toString();
-                Firebase childRef = mRootRef.child(uName);
-
-                String first = firstname.getText().toString();
-                String last = lastName.getText().toString();
-                String ct = city.getText().toString();
-                String pass = password.getText().toString();
-                String emailKey = email.getText().toString();
 
 
-                childRef.setValue(new Person(first,last,ct,pass,emailKey) );
+    }
+
+    public  void  onClickFinish(View v){
+        String uName = userName.getText().toString();
+        Firebase childRef = mRootRef.child(uName);
+
+        String first = firstname.getText().toString();
+        String last = lastName.getText().toString();
+        String ct = city.getText().toString();
+        String pass = password.getText().toString();
+        String emailKey = email.getText().toString();
 
 
-             }
-        });
+        childRef.setValue(new Person(first,last,ct,pass,emailKey) );
+        Intent I = new Intent(this,firstScreen.class);
+        startActivity(I);
 
     }
 
