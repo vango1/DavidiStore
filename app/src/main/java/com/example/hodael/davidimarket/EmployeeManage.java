@@ -34,7 +34,7 @@ public class EmployeeManage extends AppCompatActivity {
 
 
         Firebase.setAndroidContext(this);
-        mEmpRef = new Firebase("https://my-project-1512230573726.firebaseio.com/Employees");
+        mEmpRef = new Firebase("https://davidimarket-7f5fd.firebaseio.com/Employees");
 
         AddEmpBtn = (Button) findViewById(R.id.AddEmpButton);
         SearchEmpBtn = (Button) findViewById(R.id.SearchEmpButton);

@@ -88,5 +88,16 @@
             android:onClick="onClickLogInEmp"
             android:text="employee login" />
 
+        <Button
+            android:id="@+id/testTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="11dp"
+            android:layout_toEndOf="@+id/button3"
+            android:layout_toRightOf="@+id/button3"
+            android:onClick="onClIcKEmp"
+            android:text="test" />
+
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

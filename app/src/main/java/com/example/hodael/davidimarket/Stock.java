@@ -31,7 +31,7 @@ public class Stock extends AppCompatActivity {
         setContentView(R.layout.activity_stock);
 
         Firebase.setAndroidContext(this);
-        mStockRef = new Firebase("https://my-project-1512230573726.firebaseio.com/Stock");
+        mStockRef = new Firebase("https://davidimarket-7f5fd.firebaseio.com/Stock");
         AddItemButton = (Button) findViewById(R.id.addItem_Button);
         ShowItemDetailsButton = (Button) findViewById(R.id.showItem_Button);
 
