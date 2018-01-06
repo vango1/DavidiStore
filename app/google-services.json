@@ -1,35 +1,39 @@
 {
   "project_info": {
-    "project_number": "251857574990",
-    "firebase_url": "https://davidimarket.firebaseio.com",
-    "project_id": "davidimarket",
-    "storage_bucket": "davidimarket.appspot.com"
+    "project_number": "517265244532",
+    "firebase_url": "https://davidimarket-7f5fd.firebaseio.com",
+    "project_id": "davidimarket-7f5fd",
+    "storage_bucket": "davidimarket-7f5fd.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:251857574990:android:f2994c18d795e6c3",
+        "mobilesdk_app_id": "1:517265244532:android:f2994c18d795e6c3",
         "android_client_info": {
           "package_name": "com.example.hodael.davidimarket"
         }
       },
       "oauth_client": [
         {
-          "client_id": "251857574990-ksfdl4bi6vi3jn4iflhppkhvv0q6jptr.apps.googleusercontent.com",
+          "client_id": "517265244532-rp0ievlt8dgthpudpd2kl4ftmrar23p9.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.hodael.davidimarket",
-            "certificate_hash": "dcdb63c607bea2f0ee9a0490738b2e13dab924a7"
+            "certificate_hash": "8ac4795a84fcbbbb5bf5e3b8dbe97a83bd66f65c"
           }
         },
         {
-          "client_id": "251857574990-8u3flhii8stgh8qi6lk1vgl7dces7us4.apps.googleusercontent.com",
+          "client_id": "517265244532-f3pas7k8dbim9mra5780u04rst4n05l8.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "517265244532-7iiqqdi3opq6riuerd65uvs2urt6rems.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAL3FAm3lFlF5IaEWAcpB8HEeksN8ZEk7g"
+          "current_key": "AIzaSyB6NybZHPyA5cb-od0tXkHQMdvqgYthEqw"
         }
       ],
       "services": {
@@ -40,7 +44,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "251857574990-8u3flhii8stgh8qi6lk1vgl7dces7us4.apps.googleusercontent.com",
+              "client_id": "517265244532-f3pas7k8dbim9mra5780u04rst4n05l8.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

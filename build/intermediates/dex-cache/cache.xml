@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\VANGO1\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.1.aar\4e514c0e4021ce6b66e26c673c8a42d0\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="dff4d8f88fe2c0e57306e6981fd9b90caeead7e3">
+        <dex dex="C:\Users\VANGO1\AndroidStudioProjects\davidi\app\build\intermediates\transforms\preDex\release\25.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\VANGO1\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.1.aar\9f43147e9c04a9e3baffa5628e79d07a\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\VANGO1\AndroidStudioProjects\davidi\app\build\intermediates\transforms\preDex\release\21.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\VANGO1\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.1.aar\b842f8ce442badc51bec703ebc0bde60\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e7424f816f538c2acfba6169b25e297ea22afbd8">
+        <dex dex="C:\Users\VANGO1\AndroidStudioProjects\davidi\app\build\intermediates\transforms\preDex\release\22.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\VANGO1\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.1.aar\de9048273e95464fbb05b2185537441f\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="681eeeaec5300e5257ad9bf889c3859ba3833d5a">
+        <dex dex="C:\Users\VANGO1\AndroidStudioProjects\davidi\app\build\intermediates\transforms\preDex\release\5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\VANGO1\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="C:\Users\VANGO1\AndroidStudioProjects\davidi\app\build\intermediates\transforms\preDex\release\2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\VANGO1\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.1.aar\98ececdbc6caa787ff81895ef6dc4c12\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="71af915b7f4f7ec0b5f768b365145bb6a5cb9a66">
+        <dex dex="C:\Users\VANGO1\AndroidStudioProjects\davidi\app\build\intermediates\transforms\preDex\release\26.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\VANGO1\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-11.0.4.aar\67b6ee809a6dae6295b9f925adc6f2da\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="4b685077cdb08cf7ae8b61afd1fe910e47d91b9a">
+        <dex dex="C:\Users\VANGO1\AndroidStudioProjects\davidi\app\build\intermediates\transforms\preDex\release\19.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\VANGO1\.gradle\caches\transforms-1\files-1.1\firebase-storage-11.0.4.aar\9487ef13a95d30258dc58e294e869700\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3ac08c35419ab7cf9146969de471768dbe502f0f">
+        <dex dex="C:\Users\VANGO1\AndroidStudioProjects\davidi\app\build\intermediates\transforms\preDex\release\11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\VANGO1\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\26.0.1\e1bb32b12b25e2f78e6786059ca7ea878f8345e0\support-annotations-26.0.1.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e1bb32b12b25e2f78e6786059ca7ea878f8345e0">
+        <dex dex="C:\Users\VANGO1\AndroidStudioProjects\davidi\app\build\intermediates\transforms\preDex\release\30.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\VANGO1\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.1.aar\b85c933b1ad4ecf3bfe28a9ab48e0441\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="22c673e65215e0764add61e3102946de895439e4">
+        <dex dex="C:\Users\VANGO1\AndroidStudioProjects\davidi\app\build\intermediates\transforms\preDex\release\29.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\VANGO1\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.1.aar\c0b8a4f3eaf6a980f7c4f349cb0d7274\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="a4590fa7eadce322ca893129fdc999074e1aa5bf">
+        <dex dex="C:\Users\VANGO1\AndroidStudioProjects\davidi\app\build\intermediates\transforms\preDex\release\28.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\VANGO1\.gradle\caches\transforms-1\files-1.1\palette-v7-26.0.1.aar\b88e3027fadc43785e7d8bbf1f2fc366\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e72a518413b68aa111650f252ed49028d2f3c75f">
+        <dex dex="C:\Users\VANGO1\AndroidStudioProjects\davidi\app\build\intermediates\transforms\preDex\release\24.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\VANGO1\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.1.aar\dd0e0793ea224fabd166a20aa14db399\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d095503f29a8dedc55b9326ed97a5902a1527ab9">
+        <dex dex="C:\Users\VANGO1\AndroidStudioProjects\davidi\app\build\intermediates\transforms\preDex\release\27.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\VANGO1\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.1.aar\53d822d9b64ca01a40449c3325f05372\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="083e7bc5a9d9404b49b8f34e5091532361fa28e6">
+        <dex dex="C:\Users\VANGO1\AndroidStudioProjects\davidi\app\build\intermediates\transforms\preDex\release\23.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\VANGO1\.gradle\caches\transforms-1\files-1.1\firebase-ui-storage-2.3.0.aar\dc522690b9e2bf42ab406464bd22d6fe\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3c433e48557e476290f45fb6cb568d1a103c9978">
+        <dex dex="C:\Users\VANGO1\AndroidStudioProjects\davidi\app\build\intermediates\transforms\preDex\release\1.jar" />
+    </item>
+
+</items>

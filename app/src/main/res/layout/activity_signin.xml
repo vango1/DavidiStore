@@ -13,6 +13,16 @@
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="5dp">
 
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/common_google_signin_btn_icon_dark_normal_background" />
+
         <EditText
             android:id="@+id/editUser"
             android:layout_width="wrap_content"
@@ -75,24 +85,12 @@
             android:inputType="textPostalAddress" />
 
         <Button
-            android:id="@+id/Capture"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/editEmail"
-            android:layout_marginTop="28dp"
-            android:layout_toLeftOf="@+id/img"
-            android:layout_toStartOf="@+id/img"
-            android:onClick="onClickCapture"
-            android:text="capture" />
-
-        <Button
             android:id="@+id/Upload"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/Capture"
-            android:layout_alignBottom="@+id/Capture"
-            android:layout_alignEnd="@+id/editEmail"
-            android:layout_alignRight="@+id/editEmail"
+            android:layout_alignBaseline="@+id/finishReg"
+            android:layout_alignBottom="@+id/finishReg"
+            android:layout_centerHorizontal="true"
             android:onClick="onClickUp"
             android:text="upload" />
 
@@ -100,12 +98,12 @@
             android:id="@+id/finishReg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/Upload"
-            android:layout_alignBottom="@+id/Upload"
+            android:layout_above="@+id/img"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginEnd="29dp"
-            android:layout_marginRight="29dp"
+            android:layout_marginBottom="21dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
             android:onClick="onClickFinish"
             android:text="Finish" />
 
@@ -121,21 +119,17 @@
             android:hint="Email"
             android:inputType="textEmailAddress" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/Capture"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/img"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_gravity="center_horizontal"
-                app:srcCompat="@drawable/common_google_signin_btn_icon_dark_normal_background" />
-        </LinearLayout>
+        <Button
+            android:id="@+id/Capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/Upload"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:onClick="onClickCapture"
+            android:text="Capture" />
 
 
     </RelativeLayout>

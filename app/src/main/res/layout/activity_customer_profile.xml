@@ -117,21 +117,19 @@
             android:id="@+id/custSearchBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_above="@+id/custItemNameTxt"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_below="@+id/emailP"
-            android:layout_marginEnd="18dp"
-            android:layout_marginRight="18dp"
-            android:layout_marginTop="54dp"
             android:text="Search Item" />
 
         <EditText
             android:id="@+id/custItemNameTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/custSearchBtn"
-            android:layout_alignLeft="@+id/textView27"
-            android:layout_alignStart="@+id/textView27"
+            android:layout_above="@+id/showItemCustom"
+            android:layout_alignLeft="@+id/textView22"
+            android:layout_alignStart="@+id/textView22"
+            android:layout_marginBottom="25dp"
             android:ems="10"
             android:hint="Enter the Item Name"
             android:inputType="textPersonName" />
@@ -141,11 +139,32 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/custItemNameTxt"
+            android:layout_alignParentBottom="true"
             android:layout_alignStart="@+id/custItemNameTxt"
-            android:layout_below="@+id/custItemNameTxt"
-            android:layout_marginTop="22dp"
+            android:layout_marginBottom="31dp"
             android:ems="10"
             android:inputType="textMultiLine" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_alignBottom="@+id/emailP"
+            android:layout_alignTop="@+id/uNameP"
+            android:layout_toEndOf="@+id/custItemNameTxt"
+            android:layout_toRightOf="@+id/custItemNameTxt"
+            tools:layout_editor_absoluteY="181dp">
+
+            <ImageView
+                android:id="@+id/ImgProfileView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                app:srcCompat="@drawable/common_full_open_on_phone" />
+        </RelativeLayout>
 
     </RelativeLayout>
 

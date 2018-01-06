@@ -13,6 +13,7 @@ import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
 import com.google.android.gms.common.SignInButton;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 import java.util.HashMap;
 
@@ -27,6 +28,8 @@ public class firstScreen extends AppCompatActivity {
     String globalUname;
     static String globalPosition;
     static String userN;
+    private FirebaseAnalytics mFirebaseAnalytics ;
+
 
 
     @Override
@@ -37,23 +40,22 @@ public class firstScreen extends AppCompatActivity {
         Firebase.setAndroidContext(this);
         userName = (EditText)findViewById(R.id.userIn);
         password = (EditText)findViewById(R.id.Password_IN);
-        Ref = new Firebase("https://my-project-1512230573726.firebaseio.com/Users");
-        RefStock = new Firebase("https://my-project-1512230573726.firebaseio.com/Stock");
-        RefEmp = new Firebase("https://my-project-1512230573726.firebaseio.com/Employees");
-        CurrentPos = new Firebase("https://my-project-1512230573726.firebaseio.com/CurrentPos");
-
-
-
-
-
-
-
-
+        Ref = new Firebase("https://davidimarket-7f5fd.firebaseio.com/Users");
+        RefStock = new Firebase("https://davidimarket-7f5fd.firebaseio.com/Stock");
+        RefEmp = new Firebase("https://davidimarket-7f5fd.firebaseio.com/Employees");
+        CurrentPos = new Firebase("https://davidimarket-7f5fd.firebaseio.com/CurrentPos");
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
     }
 
 
 
+
     public  void onClickReadme(View v){
+
+
+        Bundle params = new Bundle();
+        mFirebaseAnalytics.logEvent( FirebaseAnalytics.Event.VIEW_ITEM, params );
+        mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, params);
 
         Intent i = new Intent(this,Readme.class);
         startActivity(i);
@@ -67,15 +69,38 @@ public class firstScreen extends AppCompatActivity {
     }
 
     public  void onClIcKsIgN(View v){
+        Bundle params = new Bundle();
+        mFirebaseAnalytics.logEvent( FirebaseAnalytics.Event.LOGIN, params );
+        mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, params);
+
+
+
 
         Intent i = new Intent(this,SIGNIN.class);
         startActivity(i);
 
     }
 
+    public  void onClIcKEmp(View v){
+
+        Bundle params = new Bundle();
+        mFirebaseAnalytics.logEvent( FirebaseAnalytics.Event.LOGIN, params );
+        mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, params);
+
+        Intent i = new Intent(this,EmployeeManage.class);
+        startActivity(i);
+
+    }
+
     public  void onClickLogIn(View v){
 
-         userN = userName.getText().toString();
+        Bundle params = new Bundle();
+        mFirebaseAnalytics.logEvent( FirebaseAnalytics.Event.LOGIN, params );
+        mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, params);
+
+
+
+        userN = userName.getText().toString();
         final String pass = password.getText().toString();
 
 

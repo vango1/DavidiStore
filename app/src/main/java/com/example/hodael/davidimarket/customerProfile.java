@@ -1,19 +1,30 @@
 package com.example.hodael.davidimarket;
 
 import android.content.Intent;
+import android.nfc.Tag;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.model.FileLoader;
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
+import com.firebase.ui.storage.images.FirebaseImageLoader;
+import com.google.firebase.analytics.FirebaseAnalytics;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
+
+import java.io.File;
 import java.util.HashMap;
 
 public class customerProfile extends AppCompatActivity {
@@ -24,6 +35,13 @@ public class customerProfile extends AppCompatActivity {
     private EditText searchItemCust;
     private EditText showItemDetails;
     private Firebase mStockRef;
+    private StorageReference refProfPic;
+    private FirebaseAnalytics mFirebaseAnalytics ;
+
+
+    ImageView profPic;
+
+
 
 
 
@@ -31,8 +49,10 @@ public class customerProfile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customer_profile);
+        profPic = (ImageView)findViewById(R.id.ImgProfileView) ;
 
         Firebase.setAndroidContext(this);
+
         uname_p = (TextView) findViewById(R.id.uNameP);
         fname_p = (TextView) findViewById(R.id.fNameP);
         city_p = (TextView) findViewById(R.id.cityP);
@@ -43,12 +63,18 @@ public class customerProfile extends AppCompatActivity {
         searchItemCust = (EditText) findViewById(R.id.custItemNameTxt);
         showItemDetails = (EditText) findViewById(R.id.showItemCustom);
 
+        refProfPic = FirebaseStorage.getInstance().getReference();
+        final StorageReference riversRef =    refProfPic.child("images/" + firstScreen.userN + ".jpg");
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
 
-        Ref = new Firebase("https://my-project-1512230573726.firebaseio.com/Users/" + firstScreen.userN);
-        mStockRef = new Firebase("https://my-project-1512230573726.firebaseio.com/Stock");
 
-        Toast.makeText(getApplicationContext(), ""+firstScreen.userN, Toast.LENGTH_SHORT).show();
+
+
+        Ref = new Firebase("https://davidimarket-7f5fd.firebaseio.com/Users/" + firstScreen.userN);
+        mStockRef = new Firebase("https://davidimarket-7f5fd.firebaseio.com/Stock");
+
+
 
 
         Ref.addValueEventListener(new ValueEventListener() {
@@ -70,6 +96,11 @@ public class customerProfile extends AppCompatActivity {
                     if (d.getKey().equals("lastName")) {
                         lname_p.setText(d.getValue().toString());
                     }
+
+                    Glide.with(getApplicationContext())
+                            .using(new FirebaseImageLoader())
+                            .load(riversRef)
+                            .into(profPic);
                 }
             }
 
@@ -84,6 +115,16 @@ public class customerProfile extends AppCompatActivity {
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Bundle params = new Bundle();
+                mFirebaseAnalytics.logEvent( FirebaseAnalytics.Event.SEARCH, params );
+                mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, params);
+
+
+
+
+
+
+
 
                 final String showItem = searchItemCust.getText().toString();
 

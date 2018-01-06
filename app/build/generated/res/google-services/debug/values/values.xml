@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">517265244532-f3pas7k8dbim9mra5780u04rst4n05l8.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://davidimarket-7f5fd.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">517265244532</string>
+    <string name="google_api_key" translatable="false">AIzaSyB6NybZHPyA5cb-od0tXkHQMdvqgYthEqw</string>
+    <string name="google_app_id" translatable="false">1:517265244532:android:f2994c18d795e6c3</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB6NybZHPyA5cb-od0tXkHQMdvqgYthEqw</string>
+    <string name="google_storage_bucket" translatable="false">davidimarket-7f5fd.appspot.com</string>
+    <string name="project_id" translatable="false">davidimarket-7f5fd</string>
+</resources>
