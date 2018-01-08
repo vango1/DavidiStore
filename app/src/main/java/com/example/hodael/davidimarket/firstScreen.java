@@ -54,7 +54,9 @@ public class firstScreen extends AppCompatActivity {
 
 
         Bundle params = new Bundle();
-        mFirebaseAnalytics.logEvent( FirebaseAnalytics.Event.VIEW_ITEM, params );
+
+        params.putInt("testReadme putInt" , R.id.Readme);
+        mFirebaseAnalytics.logEvent( "readme_int", params );
         mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, params);
 
         Intent i = new Intent(this,Readme.class);
@@ -62,7 +64,8 @@ public class firstScreen extends AppCompatActivity {
 
     }
     public  void onClickMap(View v){
-
+        Bundle params = new Bundle();
+        params.putInt("testMap putInt" , R.id.map);
         Intent i = new Intent(this,MapsActivity.class);
         startActivity(i);
 
@@ -72,6 +75,7 @@ public class firstScreen extends AppCompatActivity {
         Bundle params = new Bundle();
         mFirebaseAnalytics.logEvent( FirebaseAnalytics.Event.LOGIN, params );
         mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, params);
+        params.putInt("testSignIn putInt" , R.id.sign_id);
 
 
 
@@ -84,6 +88,8 @@ public class firstScreen extends AppCompatActivity {
     public  void onClIcKEmp(View v){
 
         Bundle params = new Bundle();
+
+        params.putInt("testMap putInt" , R.id.map);
         mFirebaseAnalytics.logEvent( FirebaseAnalytics.Event.LOGIN, params );
         mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, params);
 
@@ -95,6 +101,7 @@ public class firstScreen extends AppCompatActivity {
     public  void onClickLogIn(View v){
 
         Bundle params = new Bundle();
+        params.putInt("testLogin putInt" , R.id.logIn);
         mFirebaseAnalytics.logEvent( FirebaseAnalytics.Event.LOGIN, params );
         mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, params);
 
@@ -146,6 +153,10 @@ public class firstScreen extends AppCompatActivity {
 
         userN = userName.getText().toString();
         final String pass = password.getText().toString();
+        Bundle params = new Bundle();
+        params.putInt("testLoginEmp putInt" , R.id.empLogin);
+        mFirebaseAnalytics.logEvent( FirebaseAnalytics.Event.LOGIN, params );
+
 
 
         RefEmp.addValueEventListener(new ValueEventListener() {

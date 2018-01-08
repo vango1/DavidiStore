@@ -55,6 +55,9 @@ public class EmployeeManage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                Bundle params = new Bundle();
+                params.putInt("SearchEmployee putInt" , R.id.SearchEmpButton);
+
                 final String empUname = searchEmpNameTxt.getText().toString();
 
                 mEmpRef.addValueEventListener(new ValueEventListener() {
