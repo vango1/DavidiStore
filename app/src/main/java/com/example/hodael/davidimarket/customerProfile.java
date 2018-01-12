@@ -77,7 +77,7 @@ public class customerProfile extends AppCompatActivity {
 
 
 
-
+            // bring from the DB the users' details
             Ref.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
@@ -112,7 +112,7 @@ public class customerProfile extends AppCompatActivity {
             });
 
 
-
+            // search an item in the DB
             searchButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

@@ -50,7 +50,7 @@ public class EmployeeManage extends AppCompatActivity {
 
 
 
-
+        // let you search information about the employees by name for manger use only
         SearchEmpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -89,7 +89,7 @@ public class EmployeeManage extends AppCompatActivity {
 
 
 
-
+        // let you add an employee for manger use only
         AddEmpBtn.setOnClickListener(new View.OnClickListener() {
 
 

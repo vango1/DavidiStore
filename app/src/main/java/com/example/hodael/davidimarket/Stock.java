@@ -77,7 +77,7 @@ public class Stock extends AppCompatActivity {
             }
         });
 
-
+        // button for adding an item to the DB
         AddItemButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

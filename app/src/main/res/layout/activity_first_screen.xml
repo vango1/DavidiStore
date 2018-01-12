@@ -12,7 +12,8 @@
         android:background="#60e086"
 
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
+        tools:layout_editor_absoluteY="8dp"
+        tools:ignore="MissingConstraints">
 
 
         <Button
@@ -87,17 +88,6 @@
             android:layout_marginTop="21dp"
             android:onClick="onClickLogInEmp"
             android:text="employee login" />
-
-        <Button
-            android:id="@+id/testTemp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="11dp"
-            android:layout_toEndOf="@+id/empLogin"
-            android:layout_toRightOf="@+id/empLogin"
-            android:onClick="onClIcKEmp"
-            android:text="test" />
 
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
