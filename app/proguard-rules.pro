@@ -19,3 +19,12 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+-ignorewarnings
+
+-keep class com.example.hodael.davidimarket.firstScreen {
+   #cause we use it in more places
+   static java.lang.String userN;
+    #cause its create our first screen
+   protected void onCreate(android.os.Bundle);
+}

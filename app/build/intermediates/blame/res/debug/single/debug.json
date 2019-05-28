@@ -168,6 +168,10 @@
         "source": "C:\\Users\\VANGO1\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.1.aar\\de9048273e95464fbb05b2185537441f\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
     },
     {
+        "merged": "C:\\Users\\VANGO1\\AndroidStudioProjects\\davidi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_employees.png.flat",
+        "source": "C:\\Users\\VANGO1\\AndroidStudioProjects\\davidi\\app\\src\\main\\res\\drawable-v24\\employees.png"
+    },
+    {
         "merged": "C:\\Users\\VANGO1\\AndroidStudioProjects\\davidi\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\VANGO1\\AndroidStudioProjects\\davidi\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
@@ -492,6 +496,10 @@
         "source": "C:\\Users\\VANGO1\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.1.aar\\de9048273e95464fbb05b2185537441f\\res\\drawable-ldrtl-xxhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "C:\\Users\\VANGO1\\AndroidStudioProjects\\davidi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_customer.jpg.flat",
+        "source": "C:\\Users\\VANGO1\\AndroidStudioProjects\\davidi\\app\\src\\main\\res\\drawable-v24\\customer.jpg"
+    },
+    {
         "merged": "C:\\Users\\VANGO1\\AndroidStudioProjects\\davidi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\VANGO1\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.1.aar\\de9048273e95464fbb05b2185537441f\\res\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
@@ -608,12 +616,12 @@
         "source": "C:\\Users\\VANGO1\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.1.aar\\de9048273e95464fbb05b2185537441f\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
-        "merged": "C:\\Users\\VANGO1\\AndroidStudioProjects\\davidi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
-        "source": "C:\\Users\\VANGO1\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.1.aar\\de9048273e95464fbb05b2185537441f\\res\\drawable-ldrtl-xxhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
-    },
-    {
         "merged": "C:\\Users\\VANGO1\\AndroidStudioProjects\\davidi\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_stock.xml.flat",
         "source": "C:\\Users\\VANGO1\\AndroidStudioProjects\\davidi\\app\\src\\main\\res\\layout\\activity_stock.xml"
+    },
+    {
+        "merged": "C:\\Users\\VANGO1\\AndroidStudioProjects\\davidi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\VANGO1\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.1.aar\\de9048273e95464fbb05b2185537441f\\res\\drawable-ldrtl-xxhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "C:\\Users\\VANGO1\\AndroidStudioProjects\\davidi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_googleg_disabled_color_18.png.flat",
@@ -650,6 +658,10 @@
     {
         "merged": "C:\\Users\\VANGO1\\AndroidStudioProjects\\davidi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\VANGO1\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.1.aar\\de9048273e95464fbb05b2185537441f\\res\\drawable-xxxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\VANGO1\\AndroidStudioProjects\\davidi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_stock.png.flat",
+        "source": "C:\\Users\\VANGO1\\AndroidStudioProjects\\davidi\\app\\src\\main\\res\\drawable-v24\\stock.png"
     },
     {
         "merged": "C:\\Users\\VANGO1\\AndroidStudioProjects\\davidi\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg_low.xml.flat",
@@ -890,10 +902,6 @@
     {
         "merged": "C:\\Users\\VANGO1\\AndroidStudioProjects\\davidi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
         "source": "C:\\Users\\VANGO1\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.1.aar\\b85c933b1ad4ecf3bfe28a9ab48e0441\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
-    },
-    {
-        "merged": "C:\\Users\\VANGO1\\AndroidStudioProjects\\davidi\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_custom_big.xml.flat",
-        "source": "C:\\Users\\VANGO1\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.1.aar\\b85c933b1ad4ecf3bfe28a9ab48e0441\\res\\layout\\notification_template_custom_big.xml"
     },
     {
         "merged": "C:\\Users\\VANGO1\\AndroidStudioProjects\\davidi\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_out_top.xml.flat",
@@ -1728,6 +1736,10 @@
         "source": "C:\\Users\\VANGO1\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.1.aar\\de9048273e95464fbb05b2185537441f\\res\\drawable-hdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\VANGO1\\AndroidStudioProjects\\davidi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_cart2.png.flat",
+        "source": "C:\\Users\\VANGO1\\AndroidStudioProjects\\davidi\\app\\src\\main\\res\\drawable-v24\\cart2.png"
+    },
+    {
         "merged": "C:\\Users\\VANGO1\\AndroidStudioProjects\\davidi\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\VANGO1\\AndroidStudioProjects\\davidi\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
@@ -1818,6 +1830,10 @@
     {
         "merged": "C:\\Users\\VANGO1\\AndroidStudioProjects\\davidi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\VANGO1\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.1.aar\\de9048273e95464fbb05b2185537441f\\res\\drawable-hdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\VANGO1\\AndroidStudioProjects\\davidi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_cart.png.flat",
+        "source": "C:\\Users\\VANGO1\\AndroidStudioProjects\\davidi\\app\\src\\main\\res\\drawable-v24\\cart.png"
     },
     {
         "merged": "C:\\Users\\VANGO1\\AndroidStudioProjects\\davidi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",

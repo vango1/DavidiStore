@@ -12,7 +12,8 @@
         android:background="#60e086"
 
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
+        tools:layout_editor_absoluteY="8dp"
+        tools:ignore="MissingConstraints">
 
 
         <Button
@@ -59,7 +60,7 @@
             android:id="@+id/sign-id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/button3"
+            android:layout_below="@+id/empLogin"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="25dp"
             android:onClick="onClIcKsIgN"
@@ -78,26 +79,15 @@
             android:inputType="text" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/empLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignEnd="@+id/logIn"
             android:layout_alignRight="@+id/logIn"
             android:layout_below="@+id/logIn"
-            android:layout_marginTop="19dp"
+            android:layout_marginTop="21dp"
             android:onClick="onClickLogInEmp"
             android:text="employee login" />
-
-        <Button
-            android:id="@+id/testTemp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="11dp"
-            android:layout_toEndOf="@+id/button3"
-            android:layout_toRightOf="@+id/button3"
-            android:onClick="onClIcKEmp"
-            android:text="test" />
 
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

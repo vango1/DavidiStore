@@ -24,7 +24,7 @@ public class afterLogIn extends AppCompatActivity {
 
     }
 
-
+    // when you are click on stock button it gives you the possibility toe search for an item
     public  void onClickStock(View v){
 
         Intent i = new Intent(this,Stock.class);
@@ -32,7 +32,7 @@ public class afterLogIn extends AppCompatActivity {
 
     }
 
-
+    // let you add an Employee but only if you are a manger
     public  void onClickManageEmp(View v){
 
         if (firstScreen.globalPosition.equals("Manager")) {

@@ -1,4 +1,5 @@
 package com.example.hodael.davidimarket;
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
@@ -31,7 +32,7 @@ public class firstScreen extends AppCompatActivity {
     private FirebaseAnalytics mFirebaseAnalytics ;
 
 
-
+    @SuppressLint("HardcodedText")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,56 +46,52 @@ public class firstScreen extends AppCompatActivity {
         RefEmp = new Firebase("https://davidimarket-7f5fd.firebaseio.com/Employees");
         CurrentPos = new Firebase("https://davidimarket-7f5fd.firebaseio.com/CurrentPos");
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
+
     }
 
 
 
-
+    //when click on readme button the app changes from first-screen to readme
     public  void onClickReadme(View v){
 
-
+        // saving the time data when the button being pressed to the FirebaseAnalytics
         Bundle params = new Bundle();
-        mFirebaseAnalytics.logEvent( FirebaseAnalytics.Event.VIEW_ITEM, params );
-        mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, params);
 
+        params.putInt("testReadme putInt" , R.id.Readme);
+        mFirebaseAnalytics.logEvent( "readme_int", params );
+        params.putInt(FirebaseAnalytics.Param.CONTENT, R.id.Readme);
+        //Logs an app event.
+        mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, params);
         Intent i = new Intent(this,Readme.class);
         startActivity(i);
 
     }
+
+    //when click on Map button the app changes from first-screen to Map and save it to FirebaseAnalytics
     public  void onClickMap(View v){
+        Bundle params = new Bundle();
+        params.putInt("testMap putInt" , R.id.map);
+        mFirebaseAnalytics.logEvent( "map", params );
 
         Intent i = new Intent(this,MapsActivity.class);
         startActivity(i);
-
     }
 
+    //when click on Sign-in button the app changes from first-screen to Sign-in and save it to FirebaseAnalytics
     public  void onClIcKsIgN(View v){
         Bundle params = new Bundle();
+        params.putInt("testSignIn putInt" , R.id.sign_id);
         mFirebaseAnalytics.logEvent( FirebaseAnalytics.Event.LOGIN, params );
-        mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, params);
-
-
-
 
         Intent i = new Intent(this,SIGNIN.class);
         startActivity(i);
-
     }
 
-    public  void onClIcKEmp(View v){
-
-        Bundle params = new Bundle();
-        mFirebaseAnalytics.logEvent( FirebaseAnalytics.Event.LOGIN, params );
-        mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, params);
-
-        Intent i = new Intent(this,EmployeeManage.class);
-        startActivity(i);
-
-    }
-
+    //when click on Log-in button the app changes from first-screen to customer-Profile(Log-in) and save it to FirebaseAnalytics
     public  void onClickLogIn(View v){
 
         Bundle params = new Bundle();
+        params.putInt("testLogin putInt" , R.id.logIn);
         mFirebaseAnalytics.logEvent( FirebaseAnalytics.Event.LOGIN, params );
         mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, params);
 
@@ -103,7 +100,7 @@ public class firstScreen extends AppCompatActivity {
         userN = userName.getText().toString();
         final String pass = password.getText().toString();
 
-
+        // Check in the data base if the user is already exist
         Ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -113,7 +110,6 @@ public class firstScreen extends AppCompatActivity {
                     if(userN.equals(d.getKey())){
 
                         for (DataSnapshot s : d.getChildren()){
-                            boolean flag = false ;
 
                             if (s.getKey().equals("password")){
 
@@ -124,6 +120,8 @@ public class firstScreen extends AppCompatActivity {
                                         Intent i = new Intent(firstScreen.this , customerProfile.class);
                                         startActivity(i);
 
+                                        return;
+
 
 
                                 }
@@ -132,6 +130,9 @@ public class firstScreen extends AppCompatActivity {
 
                     }
                 }
+
+                Toast.makeText(getApplicationContext(), "Wrong User or Password ", Toast.LENGTH_LONG).show();
+
             }
 
             @Override
@@ -142,12 +143,17 @@ public class firstScreen extends AppCompatActivity {
 
     }
 
+    //when click on employee Log-in button the app changes from first-screen to after log-in(employee Log-in) and save it to FirebaseAnalytics
     public  void onClickLogInEmp(View v){
 
         userN = userName.getText().toString();
         final String pass = password.getText().toString();
+        Bundle params = new Bundle();
+        params.putInt("testLoginEmp putInt" , R.id.empLogin);
+        mFirebaseAnalytics.logEvent( FirebaseAnalytics.Event.LOGIN, params );
 
 
+        // Check in the data base if the employee is already exist
         RefEmp.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -173,6 +179,7 @@ public class firstScreen extends AppCompatActivity {
 
                                     Intent i = new Intent(firstScreen.this , afterLogIn.class);
                                     startActivity(i);
+                                    return;
 
 
 
@@ -182,6 +189,9 @@ public class firstScreen extends AppCompatActivity {
 
                     }
                 }
+
+                Toast.makeText(getApplicationContext(), "Wrong User or Password ", Toast.LENGTH_LONG).show();
+
             }
 
             @Override
